@@ -53,6 +53,7 @@
 }
 
 #tete button:hover{
+    cursor: pointer;
     color: #e5e5e5;
     background-color: #14213d;
     border-color: #14213d;
@@ -83,10 +84,6 @@
     background: linear-gradient(180deg, #111f35, #0a1325);
 }
 
-#ecran span{
-    color: white;
-}
-
 #touches{
     background: linear-gradient(180deg, #141f33, #0b1424);
     padding: 1em;
@@ -108,15 +105,17 @@
 }
 
 #touches > div:hover{
-    background: #14213d;
     transform: scale(1.05)
 }
+
 #on-off{
     border-right: solid 1px white;
 }
 
 .disabled{
+    cursor: no-drop !important;
     color: grey;
+    transform: none !important;
 }
 
 body{

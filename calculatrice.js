@@ -11,22 +11,16 @@ function SetTextContent(txt){
 function OnOff(){
     ison = !ison; const buttons=document.querySelectorAll("#touches div:not(:first-child)");
     if (ison){
-        document.getElementById("ecran").style.backgroundColor="white";
-        document.getElementById("ecran").style.color="black";
         for (ele of buttons){
             ele.classList.remove("disabled");
         }            
     }
-    else{
+    else{ 
         SetTextContent(''); document.getElementById("resultat").textContent='';
-        document.getElementById("ecran").style.backgroundColor="";
         for (ele of buttons){
             ele.classList.add("disabled");
+            // ele.classList.remove("touches > div:hover");
         }
-        // for (ele of buttons){
-        //     ele.classList.add("disabled");
-        //     ele.classList.remove("touches > div:hover");
-        // }
     }
 }
 
